@@ -6,12 +6,6 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -38,3 +32,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 Vercel link on which project is deployed 
 
 https://auth-next-js-dante.vercel.app/login
+
+In this project we have only implemented the login, logout and signup functionality using JWT tokens . The databased is mongo DB.
+
+The connection details for the DB are in the .env file and can be updated from there
+
+For email functionality password and username are hardcoded in the verify email helper function . Since that has not been shifted to the .env file those credentials will need to be updated from that file
